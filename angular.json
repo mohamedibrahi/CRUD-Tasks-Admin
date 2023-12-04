@@ -131,11 +131,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/admin",
-            "index": {
-              "input": "projects/admin/src/index.html",
-              "output": "../index.html"
-          },
+            "outputPath": "dist",
+            "index": "projects/admin/src/index.html",
             "main": "projects/admin/src/main.ts",
             "polyfills": "projects/admin/src/polyfills.ts",
             "tsConfig": "projects/admin/tsconfig.app.json",
