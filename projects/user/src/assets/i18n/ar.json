@@ -1,0 +1,23 @@
+{
+    "tasks":{
+        "addTask":"إضافة مهمة جديدة",
+        "Complete":"مكتمل"
+    },
+
+    "users":{
+
+    },
+
+    "general":{
+        "loading":"انتظار",
+        "Logout":"تسجيل الخروج"
+    },
+
+    "toastr":{
+
+    },
+    
+    "buttons":{
+        
+    }
+}

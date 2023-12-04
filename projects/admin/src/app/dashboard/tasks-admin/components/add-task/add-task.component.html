@@ -1,0 +1,61 @@
+<div class="p-4">
+    <header class="d-flex justify-content-between align-items-center">
+        <h1 class="m-0">{{"add-task.addNewTask" | translate}}</h1>
+        <button mat-flat-button (click)="close()" class="text-danger">
+            <mat-icon>{{"add-task.close" | translate}}</mat-icon>
+        </button>
+    </header>
+    <form [formGroup]="newTaskForm">
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>{{"add-task.title" | translate}}</mat-label>
+                    <input matInput formControlName="title" placeholder='{{"add-task.title" | translate}}'>
+                </mat-form-field>
+            </div>
+            <div class="col-md-12">
+                <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>{{"add-task.User" | translate}}</mat-label>
+                    <mat-select formControlName="userId">
+                        <mat-option *ngFor="let user of users" [value]="user?.id">
+                            {{user?.name}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-md-12 my-3">
+                <label for="selectedFile" class="btn btn-primary">{{"add-task.selectImage" | translate}}</label>
+                <span>{{fileName}}</span>
+                <input type="file" id="selectedFile" hidden class="form-control" (change)="selectImage($event)">
+            </div>
+            <div class="col-md-12">
+                <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>{{"add-task.deadline" | translate}}</mat-label>
+                    <input matInput [matDatepicker]="picker" formControlName="deadline">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </div>
+
+            <div class="col-md-12">
+                <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>{{"add-task.description" | translate}}</mat-label>
+                    <textarea matInput formControlName="description" placeholder='{{"add-task.taskDes" | translate}}'></textarea>
+                </mat-form-field>
+
+            </div>
+        </div>
+    </form>
+
+    <footer class="tw-p-6">
+        <div class="d-flex justify-content-center align-items-center">
+            <button *ngIf="!data" mat-flat-button class="btn btn-success py-1 px-5 mx-2"
+                [disabled]="newTaskForm.invalid" (click)="createTask()">{{"add-task.create" | translate}}</button>
+            <button *ngIf="data" mat-flat-button class="btn btn-success py-1 px-5 mx-2" [disabled]="newTaskForm.invalid"
+                (click)="updateTask()">{{"add-task.update" | translate}}</button>
+
+            <button mat-flat-button class="btn btn-danger py-1 px-5" (click)="close()">{{"add-task.close" | translate}}</button>
+        </div>
+
+    </footer>
+</div>

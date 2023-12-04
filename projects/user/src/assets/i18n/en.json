@@ -1,0 +1,23 @@
+{
+    "tasks":{
+        "addTask":"Add Task",
+        "Complete":"Complete"
+    },
+
+    "users":{
+
+    },
+
+    "general":{
+        "loading":"Loading",
+        "Logout":"Logout"
+    },
+
+    "toastr":{
+
+    },
+    
+    "buttons":{
+
+    }
+}

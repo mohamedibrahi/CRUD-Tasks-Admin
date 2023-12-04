@@ -1,0 +1,68 @@
+{
+    "tasks":{
+        "addTask":"إضافة مهمة جديدة",
+        "Complete":"مكتمل",
+        "In-Progress":"تحت الملاحظة",
+        "search":"بحث",
+        "titleSearch":"عنوان البحث",
+        "byUser":"عن طريق المستخدم",
+        "status":"الحالة",
+        "dateRange":"أدخل مدة التاريخ",
+        "image":"الصورة",
+        "title":"العنوان",
+        "user":"المستخدم",
+        "deadline":"وقت الانتهاء",
+        "update":"تحديث",
+        "delete":"مسح",
+        "taskDeleted":"تم مسح المهمة بنجاح"
+    },
+    "add-task":{
+        "addNewTask":"اضافة مهمة جديدة",
+        "title":"العنوان",
+        "User":"المستخدم",
+        "selectImage":"اختار الصورة",
+        "deadline":"موعد الانتهاء",
+        "description":"الوصف",
+        "taskDes":"وصف المهمة ...",
+        "create":"إنشاء",
+        "update":"تحديث",
+        "close":"غلق"  
+    },
+    "users":{
+        "search":"بحث",
+        "titleSearch":"عنوان البحث",
+        "num":"رقم#",
+        "name":"الإسم",
+        "email":"الإيميل",
+        "tasksAssigned":"التاسك مسندة ل",
+        "delete":"مسح",
+        "active":"تفعيل",
+        "in-active":"تعطيل"
+    },
+    "auth":{
+        "login":"تسجيل الدخول",
+        "email":"الايميل",
+        "password":"كلمة المرور",
+        "required":"مطلوب"
+    },
+    "general":{
+        "loading":"انتظار",
+        "logout":"تسجيل الخروج",
+        "tasks":"المهمات",
+        "allTasks":"كل المهمات",
+        "users":"المستخدمين"
+    },
+
+    "toastr":{
+        "taskCreated":"تم إنشاء المهمة بنجاح",
+        "taskUpdated":"تم تحديث المهمة بنجاح"
+    },
+    "confirmation":{
+        "areYouSure":"هل انت متاكد من إهمال اي تغير؟",
+        "yes":"نعم",
+        "no":"لا"
+    },
+    "buttons":{
+        
+    }
+}

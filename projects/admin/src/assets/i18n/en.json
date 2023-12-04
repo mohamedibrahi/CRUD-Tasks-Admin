@@ -1,0 +1,70 @@
+{
+    "tasks":{
+        "addTask":"Add Task",
+        "Complete":"Complete",
+        "In-Progress":"In-Progress",
+        "search":"Search",
+        "titleSearch":"Title Search",
+        "byUser":"By User",
+        "status":"Status",
+        "dateRange":"Enter a date range",
+        "image":"Image",
+        "title":"Title",
+        "user":"User",
+        "deadline":"Deadline Date",
+        "update":"Update",
+        "delete":"Delete",
+        "taskDeleted":"Task Deleted Successfully"
+    },
+    "add-task":{
+        "addNewTask":"Add New Task",
+        "title":"Title",
+        "User":"User",
+        "selectImage":"Select Image",
+        "deadline":"Deadline Date",
+        "description":"Description",
+        "taskDes":"task description ....",
+        "create":"Create",
+        "update":"Update",
+        "close":"Close" 
+    },
+
+    "users":{
+        "search":"Search",
+        "titleSearch":"Title Search",
+        "num":"No.",
+        "name":"Name",
+        "email":"Email",
+        "tasksAssigned":"Tasks Assigned",
+        "delete":"Delete",
+        "active":"Active",
+        "in-active":"In-Active"
+    },
+    "auth":{
+        "login":"Login",
+        "email":"Email",
+        "password":"Password",
+        "required":"Required"
+    },
+    "general":{
+        "loading":"Loading",
+        "logout":"Logout",
+        "tasks":"Tasks",
+        "allTasks":"All-Tasks",
+        "users":"Users"
+    },
+
+    "toastr":{
+        "taskCreated":"Task Created Successfully",
+        "taskUpdated":"Task Updated Successfully"
+    },
+    "confirmation":{
+        "areYouSure":"Are You Sure That You Want To Discard Your Changes?",
+        "yes":"Yes",
+        "no":"No"
+    },
+    
+    "buttons":{
+
+    }
+}
