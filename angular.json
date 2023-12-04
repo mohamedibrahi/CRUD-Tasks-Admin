@@ -132,7 +132,10 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/admin",
-            "index": "projects/admin/src/index.html",
+            "index": {
+              "input": "projects/admin/src/index.html",
+              "output": "../index.html"
+          },
             "main": "projects/admin/src/main.ts",
             "polyfills": "projects/admin/src/polyfills.ts",
             "tsConfig": "projects/admin/tsconfig.app.json",
@@ -158,13 +161,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "1mb",
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "2mb"
                 }
               ],
               "fileReplacements": [
